@@ -443,7 +443,7 @@ gap: 2rem;
   margin-top: 1em;
 }
 .item__btns button:hover {
-  box-shadow: 3px 3px 0 -1px var(--white), 3px 3px 0 1px var(--black);
+   box-shadow: 2px 2px 0 -1px var(--white), 2px 2px 0 1px var(--black);
 }
 .item__btns button {
   display: flex;

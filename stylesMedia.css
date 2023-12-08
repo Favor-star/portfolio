@@ -99,15 +99,15 @@
     padding: 10px;
     width: 100%;
   }
-  .contact__social{
+  .contact__social {
     /* border: 1px solid blue; */
-   max-width: 100%;
+    max-width: 100%;
   }
-  .msg__box{
+  .msg__box {
     width: 100%;
     margin-right: 0;
   }
-  ::-webkit-scrollbar{
+  ::-webkit-scrollbar {
     width: 6px;
   }
 }
@@ -118,15 +118,44 @@
   .actions {
     display: none;
   }
-  .name_email{
+  .name_email {
     flex-direction: column;
   }
-  ::-webkit-scrollbar{
-    width:4px;
+  ::-webkit-scrollbar {
+    width: 4px;
   }
-  .home__btns{
+  .home__btns {
     align-items: center;
-    gap:1.5rem;
+    gap: 1.5rem;
     justify-content: center;
+  }
+  .scrollDown {
+    display: none;
+  }
+  .home__div img {
+    box-shadow: 5px 5px 0 -1px var(--black), 5px 5px 0 1px var(--black);
+  }
+  .about__me__contents img {
+    box-shadow: 5px 5px 0 -1px var(--black), 5px 5px 0 1px var(--black) !important;
+  }
+  .skill {
+    border-radius: 0;
+    box-shadow: 2px 2px 0 -1px var(--white), 2px 2px 0 1px var(--black);
+  }
+  .bg-btn {
+    box-shadow: 3px 3px 0 -1px var(--white), 3px 3px 0 1px var(--black);
+  }
+  .item__btns button {
+    box-shadow: 2px 2px 0 -1px var(--white), 2px 2px 0 1px var(--black);
+  }
+  .item__btns button:hover {
+    box-shadow: 2px 2px 0 -1px var(--black), 2px 2px 0 1px var(--black);
+  }
+  .link {
+    box-shadow: 3px 3px 0 -1px var(--white), 3px 3px 0 1px var(--black);
+}
+  #home{
+    min-height: calc(100vh - 5vw);
+   height: calc(100vh - 5vw);
   }
 }
