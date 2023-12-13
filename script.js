@@ -17,10 +17,10 @@ menus.addEventListener("click", handleMenu);
 closeBtn.addEventListener("click", () => {
   htmlCont.style.overflow = "auto";
 });
-themeSwitcher.forEach((elem) => [
+themeSwitcher.forEach((elem) => {
   elem.addEventListener("click", () => {
-    console.log(elem);
-    console.log("clicked");
+    // console.log(elem);
+    // console.log("clicked");
     all.forEach((element) => {
       document.documentElement.classList.toggle("dark__mode");
       if (document.documentElement.classList.contains("dark__mode")) {
@@ -33,5 +33,5 @@ themeSwitcher.forEach((elem) => [
         elem.classList.add("bxs-moon");
       }
     });
-  }),
-]);
+  });
+});
