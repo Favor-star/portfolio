@@ -14,6 +14,10 @@
   --white: #fff;
   --borders: 2px solid var(--black);
 }
+.dark__mode {
+  --black: #fff;
+  --white: #000;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -30,7 +34,6 @@ body {
   color: var(--black);
   background-color: var(--white);
   transition: all 0.3s ease-in-out;
-
 }
 html {
   overflow-x: hidden;
@@ -518,7 +521,6 @@ header span a {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-
 }
 .name_email {
   display: flex;
@@ -533,8 +535,8 @@ textarea {
   border: var(--borders);
   background-color: var(--white);
   color: var(--black);
-   font-family: "Archivo Narrow", sans-serif;
-   font-size: 1rem;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 1rem;
 }
 .box__item input:focus,
 textarea:focus {
@@ -544,19 +546,19 @@ textarea:focus {
   font-family: "Archivo Narrow", sans-serif;
   /* box-shadow: 4px 4px 0 -1px var(--white), 4px 4px 0 1px var(--black); */
 }
-label{
+label {
   position: relative;
 }
-.box__item label::after{
+.box__item label::after {
   content: "*";
   color: red;
   /* border: 1px solid blue; */
   height: fit-content;
-  width: fit-content;;
+  width: fit-content;
   margin-left: 3px;
   font-size: 1.5rem;
   position: absolute;
-transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .box__item input:hover,
