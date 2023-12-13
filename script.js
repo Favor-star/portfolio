@@ -19,7 +19,8 @@ closeBtn.addEventListener("click", () => {
 });
 themeSwitcher.forEach((elem) => [
   elem.addEventListener("click", () => {
-    // console.log(all);
+    console.log(elem);
+    console.log("clicked");
     all.forEach((element) => {
       document.documentElement.classList.toggle("dark__mode");
       if (document.documentElement.classList.contains("dark__mode")) {
@@ -27,11 +28,7 @@ themeSwitcher.forEach((elem) => [
         document.querySelector(".my__image_2").style.backgroundColor = "white";
         elem.classList.remove("bxs-moon");
         elem.classList.add("bxs-sun");
-        // document.querySelector(".my__image_1").src = "images/me-1-b.svg";
-        // document.querySelector(".my__image_2").src = "images/me-2-b.svg";
       } else {
-        // document.querySelector(".my__image_1").src = "images/me-1-w.svg";
-        // document.querySelector(".my__image_2").src = "images/me-2-w.svg";
         elem.classList.remove("bxs-sun");
         elem.classList.add("bxs-moon");
       }
