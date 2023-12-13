@@ -25,11 +25,15 @@ themeSwitcher.forEach((elem) => [
       if (document.documentElement.classList.contains("dark__mode")) {
         document.querySelector(".my__image_1").style.backgroundColor = "white";
         document.querySelector(".my__image_2").style.backgroundColor = "white";
+        elem.classList.remove("bxs-moon");
+        elem.classList.add("bxs-sun");
         // document.querySelector(".my__image_1").src = "images/me-1-b.svg";
         // document.querySelector(".my__image_2").src = "images/me-2-b.svg";
       } else {
-        document.querySelector(".my__image_1").src = "images/me-1-w.svg";
-        document.querySelector(".my__image_2").src = "images/me-2-w.svg";
+        // document.querySelector(".my__image_1").src = "images/me-1-w.svg";
+        // document.querySelector(".my__image_2").src = "images/me-2-w.svg";
+        elem.classList.remove("bxs-sun");
+        elem.classList.add("bxs-moon");
       }
     });
   }),
