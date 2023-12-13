@@ -21,17 +21,17 @@ themeSwitcher.forEach((elem) => {
   elem.addEventListener("click", () => {
     // console.log(elem);
     // console.log("clicked");
-    all.forEach((element) => {
-      document.documentElement.classList.toggle("dark__mode");
-      if (document.documentElement.classList.contains("dark__mode")) {
-        document.querySelector(".my__image_1").style.backgroundColor = "white";
-        document.querySelector(".my__image_2").style.backgroundColor = "white";
-        elem.classList.remove("bxs-moon");
-        elem.classList.add("bxs-sun");
-      } else {
-        elem.classList.remove("bxs-sun");
-        elem.classList.add("bxs-moon");
-      }
-    });
+    // all.forEach((element) => {
+    document.documentElement.classList.toggle("dark__mode");
+    if (document.documentElement.classList.contains("dark__mode")) {
+      document.querySelector(".my__image_1").style.backgroundColor = "white";
+      document.querySelector(".my__image_2").style.backgroundColor = "white";
+      elem.classList.remove("bxs-moon");
+      elem.classList.add("bxs-sun");
+    } else {
+      elem.classList.remove("bxs-sun");
+      elem.classList.add("bxs-moon");
+    }
+    // });
   });
 });
