@@ -49,20 +49,20 @@
             <a class="subheader" href="#contact__me">Contact Me</a>
           </nav>
           <span class="actions">
-            <a class="subheader" href="contact__me">Hire Me</a>
-            <i class="bx bxs-moon"></i>
+            <a class="subheader" href="#contact__me">Hire Me</a>
+            <i class="theme-switcher bx bxs-moon"></i>
           </span>
         </header>
         <div id="navigation__pane">
           <div class="pane">
             <i id="close" class="bx bx-x"></i>
-            <a class="subheader" href="#home">Home</a>
-            <a class="subheader" href="#about__me">About Me</a>
-            <a class="subheader" href="#works">Works</a>
-            <a class="subheader" href="#contact__me">Contact Me</a>
+            <a class="subheader nav__sub" href="#home">Home</a>
+            <a class="subheader nav__sub" href="#about__me">About Me</a>
+            <a class="subheader nav__sub" href="#works">Works</a>
+            <a class="subheader nav__sub" href="#contact__me">Contact Me</a>
             <div class="action__btns">
-              <a class="subheader" href="contact__me">Hire Me</a>
-            <i class="bx bxs-moon"></i>
+              <a class="subheader nav__sub" href="#contact__me">Hire Me</a>
+            <i class="theme-switcher bx bxs-moon"></i>
             </div>
           </div>
         </div>
@@ -72,14 +72,14 @@
         <img
           src="images/me-1-w.svg"
           alt="favour Eliab drawing image"
-          class="home__img"
+          class="home__img my__image_1"
         />
         <span class="home__welcome">
           <h1>Favour Eliab</h1>
           <p>Web develper, Web Designer and Mechanical designer</p>
           <span class="home__btns">
-            <button class="home__btn">Hire me</button>
-            <button class="home__btn">Download CV</button>
+            <a class="home__btn">Hire me</a>
+            <a href="Docs/Eliab's Resume.pdf" class="home__btn">Download CV</a>
           </span>
         </span>
       </div>
@@ -101,7 +101,7 @@
     <section id="about__me">
       <h2>About Me</h2>
       <div class="about__me__contents">
-        <img src="images/me-2-w.svg" alt="Favour Eliab imaage" />
+        <img class="my__image_2" src="images/me-2-w.svg" alt="Favour Eliab imaage" />
         <div class="about__texts">
           <p class="motivation">
             Bound by a shared destiny, a bright, optimistic teen bursting with
@@ -177,8 +177,8 @@
               </div>
             </span>
             <span class="bg-btns">
-              <button class="bg-btn">Download CV</button>
-              <button class="bg-btn">Contact Me</button>
+              <a href="Docs/Eliab's Resume.pdf" class="bg-btn">Download CV</a>
+              <a href="#contact__me" class="bg-btn">Contact Me</a>
             </span>
           </div>
         </div>
@@ -350,7 +350,7 @@
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Enter your name"
+                placeholder="Your name, please"
               />
             </div>
             <div class="box__item">
@@ -359,7 +359,7 @@
                 type="email"
                 name="email"
                 id="email"
-                placeholder="email please.."
+                placeholder="Your e-mail please.."
               />
             </div>
           </div>

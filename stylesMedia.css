@@ -1,3 +1,8 @@
+.dark__mode{
+  --black: #fff;
+  --white: #000;
+}
+
 .head__wrapper {
   display: flex;
   width: 100%;
@@ -52,7 +57,7 @@
     top: 0;
     left: 0;
     z-index: 1;
-    /* background-color: rgba(0, 0, 0, 0.199); */
+    background-color: rgba(0, 0, 0, 0.562);
     backdrop-filter: blur(5px);
     transition: none;
     padding: 20px;

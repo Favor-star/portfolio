@@ -7,9 +7,8 @@
   box-sizing: border-box;
   /* font-family: 'Archivo Narrow', sans-serif; */
   line-height: 130%;
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out; */
 }
-
 :root {
   --black: #000;
   --white: #fff;
@@ -28,14 +27,17 @@ body {
   padding-left: 4vw !important;
   padding-right: 4vw;
   padding-top: 2vw;
+  color: var(--black);
+  background-color: var(--white);
+  transition: all 0.3s ease-in-out;
 
 }
-html{
+html {
   overflow-x: hidden;
 }
 ::-webkit-scrollbar {
   width: 8px;
-  background:white;
+  background: white;
 }
 
 ::-webkit-scrollbar-track {
@@ -44,7 +46,6 @@ html{
 ::-webkit-scrollbar-thumb {
   background: var(--black);
   border-radius: 1px;
-
 }
 button {
   font-family: "Archivo Narrow", sans-serif;
@@ -163,6 +164,8 @@ header span a {
   background-color: var(--black);
   border: var(--borders);
   transition: all 0.2s ease-in;
+  cursor: pointer;
+  text-decoration: none;
 }
 .home__btn:hover {
   border-radius: 0;
@@ -340,6 +343,8 @@ header span a {
   color: var(--black);
   background-color: var(--white);
   font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
 }
 .bg-btn:hover {
   box-shadow: 3px 3px 0 -1px var(--white), 3px 3px 0 1px var(--black);
@@ -375,11 +380,10 @@ header span a {
   margin-top: 1.5rem;
   display: flex;
   flex-wrap: wrap;
-gap: 2rem;
+  gap: 2rem;
+  justify-content: center;
+  align-content: center;
 
-  justify-content: start;
-   align-content: center;
-  
   width: 100%;
 }
 .work__item {
@@ -443,7 +447,7 @@ gap: 2rem;
   margin-top: 1em;
 }
 .item__btns button:hover {
-   box-shadow: 2px 2px 0 -1px var(--white), 2px 2px 0 1px var(--black);
+  box-shadow: 2px 2px 0 -1px var(--white), 2px 2px 0 1px var(--black);
 }
 .item__btns button {
   display: flex;
@@ -514,6 +518,7 @@ gap: 2rem;
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
+
 }
 .name_email {
   display: flex;
@@ -528,17 +533,35 @@ textarea {
   border: var(--borders);
   background-color: var(--white);
   color: var(--black);
+   font-family: "Archivo Narrow", sans-serif;
+   font-size: 1rem;
 }
 .box__item input:focus,
 textarea:focus {
   background-color: var(--black);
   color: var(--white);
   border-color: var(--white);
+  font-family: "Archivo Narrow", sans-serif;
   /* box-shadow: 4px 4px 0 -1px var(--white), 4px 4px 0 1px var(--black); */
 }
+label{
+  position: relative;
+}
+.box__item label::after{
+  content: "*";
+  color: red;
+  /* border: 1px solid blue; */
+  height: fit-content;
+  width: fit-content;;
+  margin-left: 3px;
+  font-size: 1.5rem;
+  position: absolute;
+transform: translateY(-5px);
+}
+
 .box__item input:hover,
 textarea:hover {
-  box-shadow: 4px 4px 0 -1px var(--white), 4px 4px 0 1px var(--black);
+  box-shadow: 3px 3px 0 -1px var(--white), 3px 3px 0 1px var(--black);
 }
 .send__msg__btn {
   padding: 8px 10px;
