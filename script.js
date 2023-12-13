@@ -4,6 +4,7 @@ const htmlCont = document.querySelector("html");
 const closeBtn = document.getElementById("close");
 const themeSwitcher = document.querySelectorAll(".theme-switcher");
 const all = document.querySelectorAll("*");
+const body = document.querySelector("body");
 function handleMenu() {
   isClicked = true;
   if (isClicked) htmlCont.style.overflow = "hidden";
@@ -22,8 +23,9 @@ themeSwitcher.forEach((elem) => {
     // console.log(elem);
     // console.log("clicked");
     // all.forEach((element) => {
-    document.documentElement.classList.toggle("dark__mode");
-    if (document.documentElement.classList.contains("dark__mode")) {
+    // document.documentElement.classList.toggle("dark__mode");
+    body.classList.toggle("dark__mode");
+    if (body.classList.contains("dark__mode")) {
       document.querySelector(".my__image_1").style.backgroundColor = "white";
       document.querySelector(".my__image_2").style.backgroundColor = "white";
       elem.classList.remove("bxs-moon");
