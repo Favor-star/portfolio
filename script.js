@@ -20,20 +20,31 @@ closeBtn.addEventListener("click", () => {
 });
 themeSwitcher.forEach((elem) => {
   elem.addEventListener("click", () => {
-    // console.log(elem);
-    // console.log("clicked");
-    // all.forEach((element) => {
-    // document.documentElement.classList.toggle("dark__mode");
-    body.classList.toggle("dark__mode");
+
+    // body.classList.toggle("dark__mode");
+
+
     if (body.classList.contains("dark__mode")) {
-      document.querySelector(".my__image_1").style.backgroundColor = "white";
-      document.querySelector(".my__image_2").style.backgroundColor = "white";
+      body.classList.remove("dark__mode");
+      localStorage.setItem("colorMode", "white");
       elem.classList.remove("bxs-moon");
       elem.classList.add("bxs-sun");
     } else {
+      body.classList.add("dark__mode");
+      localStorage.setItem("colorMode", "dark");
       elem.classList.remove("bxs-sun");
       elem.classList.add("bxs-moon");
     }
     // });
   });
 });
+const mode = (value) => {
+  if (value == "dark") {
+    
+    body.classList.add("dark__mode")
+  }
+  else {
+    body.classList.remove("dark__mode");
+  }
+}
+onload = mode(localStorage.getItem("colorMode"));

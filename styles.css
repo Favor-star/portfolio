@@ -114,6 +114,7 @@ header span a {
   height: auto;
   border: var(--borders);
   box-shadow: 5px 5px 0 -1px var(--white), 5px 5px 0 1px var(--black);
+  background-color: white;
 }
 .home__img:hover {
   box-shadow: 5px 5px 0 -1px var(--black), 5px 5px 0 1px var(--black);
@@ -241,6 +242,7 @@ header span a {
   width: 90%;
   border: var(--borders);
   box-shadow: 5px 5px 0 -1px var(--white), 5px 5px 0 1px var(--black);
+  background-color: white;
 }
 #about__me img:hover {
   box-shadow: 5px 5px 0 -1px var(--black), 5px 5px 0 1px var(--black);
