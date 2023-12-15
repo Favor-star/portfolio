@@ -17,6 +17,7 @@
 .dark__mode {
   --black: #fff;
   --white: #000;
+  --borders: 2px solid var(--black);
 }
 html {
   scroll-behavior: smooth;
