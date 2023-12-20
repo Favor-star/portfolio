@@ -41,7 +41,7 @@ html {
 }
 ::-webkit-scrollbar {
   width: 8px;
-  background: white;
+  background: var(--white);
 }
 
 ::-webkit-scrollbar-track {
