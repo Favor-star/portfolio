@@ -153,9 +153,78 @@
   }
   .link {
     box-shadow: 3px 3px 0 -1px var(--white), 3px 3px 0 1px var(--black);
-}
-  #home{
-    min-height: calc(100vh - 5vw);
-   height: calc(100vh - 5vw);
   }
+  #home {
+    min-height: calc(100vh - 5vw);
+    height: calc(100vh - 5vw);
+  }
+}
+/*FOR HANDLING THE SNIPER MODE*/
+.h__line__left {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translateX(20px);
+  width: 200px;
+  height: 2px;
+  background-color: var(--black);
+}
+.h__line__right {
+  position: absolute;
+  right: calc(50% - 200px);
+  top: 50%;
+  transform: translateX(-20px);
+  width: 200px;
+  height: 2px;
+  background-color: var(--black);
+}
+.v__line__top {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  width: 2px;
+  height: 200px;
+  background-color: var(--black);
+}
+.v__line__bottom {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 200px;
+  background-color: var(--black);
+}
+
+:root {
+  --height: 2px;
+  --width: 60px;
+}
+.top__line,
+.bottom__line {
+  width: var(--width);
+  height: var(--height);
+  background-color: var(--black);
+  position: absolute;
+  left: calc(50% - 30px);
+}
+
+.right__line,
+.left__line {
+  width: var(--height);
+  height: var(--width);
+  background-color: var(--black);
+  position: absolute;
+  top: calc(50% - 30px);
+}
+.top__line {
+  top: calc(50% - 30px);
+}
+.bottom__line {
+  top: calc(50% + 30px);
+}
+.right__line {
+  left: calc(50% + 28.5px);
+}
+.left__line {
+  left: calc(50% - 30px);
 }
