@@ -47,7 +47,7 @@ onload = mode(localStorage.getItem("colorMode"));
 
 //HANDLING THE SNIPER MODE
 const bodyPart = document.getElementsByTagName("body")[0];
-const box = document.querySelector(".small__box");
+const boxContainer = document.querySelector(".box__container");
 const hRightLine = document.querySelector(".h__line__left");
 const hLeftLine = document.querySelector(".h__line__right");
 const vTopLine = document.querySelector(".v__line__top");
@@ -96,3 +96,9 @@ bodyPart.addEventListener("mousemove", (e) => {
   vBottomLine.style.left = `${pageX}px`;
   vBottomLine.style.top = `${pageY + 20}px`;
 });
+
+//HANDLING THE SNIPER MODE
+const sniperMode = document.querySelector(".sniper");
+sniperMode.addEventListener("click", () => {
+  boxContainer.classList.toggle("sniper__hidden");
+})

@@ -252,6 +252,10 @@ header span a {
   grid-template-columns: 1fr 1fr;
   /* gap: 2rem; */
 }
+.bg__titles{
+  display: flex;
+  gap: 10px;
+}
 .subtitle {
   font-weight: 600;
 
@@ -260,6 +264,7 @@ header span a {
   height: 1.8rem;
   position: relative;
 }
+
 .skills-title::before {
   content: "";
   position: absolute;
