@@ -12,12 +12,12 @@
 :root {
   --black: #000;
   --white: #fff;
-  --borders: 2px solid var(--black);
+  --borders: 1px solid var(--black);
 }
 .dark__mode {
   --black: #fff;
   --white: #000;
-  --borders: 2px solid var(--black);
+  --borders: 1px solid var(--black);
 }
 html {
   scroll-behavior: smooth;
